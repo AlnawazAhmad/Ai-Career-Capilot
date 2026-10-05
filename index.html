@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Career Copilot</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🚀 AI Career Copilot</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#analyzer">Analyzer</a>
+        <a href="#chat">AI Chat</a>
+    </nav>
+</header>
+
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <p class="badge">AI-POWERED CAREER PLATFORM</p>
+
+        <h1>
+            Build Your
+            <span>Future Career</span>
+            With AI
+        </h1>
+
+        <p>
+            Analyze your skills, discover the right career,
+            create a learning roadmap and become job-ready.
+        </p>
+
+        <a href="#analyzer" class="btn">
+            Start Career Analysis →
+        </a>
+
+    </div>
+
+</section>
+
+
+<section id="analyzer" class="section">
+
+    <h2>Career Analyzer</h2>
+
+    <p class="subtitle">
+        Enter your details and let AI create your personalized career plan.
+    </p>
+
+
+    <form id="careerForm">
+
+        <div class="form-grid">
+
+            <div>
+                <label>Name</label>
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                >
+            </div>
+
+
+            <div>
+                <label>Education</label>
+
+                <input
+                    type="text"
+                    name="education"
+                    placeholder="BTech CSE 2nd Year"
+                    required
+                >
+
+            </div>
+
+
+            <div>
+
+                <label>Skills</label>
+
+                <input
+                    type="text"
+                    name="skills"
+                    placeholder="Python, C, HTML, CSS"
+                    required
+                >
+
+            </div>
+
+
+            <div>
+
+                <label>Interests</label>
+
+                <input
+                    type="text"
+                    name="interests"
+                    placeholder="AI, Web Development, DSA"
+                    required
+                >
+
+            </div>
+
+
+            <div class="full">
+
+                <label>Career Goal</label>
+
+                <input
+                    type="text"
+                    name="career_goal"
+                    placeholder="Software Developer"
+                    required
+                >
+
+            </div>
+
+
+            <div class="full">
+
+                <label>Upload Resume</label>
+
+                <input
+                    type="file"
+                    name="resume"
+                    accept=".pdf,.txt"
+                >
+
+            </div>
+
+        </div>
+
+
+        <button type="submit" class="btn">
+            Analyze My Career 🤖
+        </button>
+
+    </form>
+
+
+    <div id="loading" class="loading">
+        🤖 AI is analyzing your profile...
+    </div>
+
+
+    <div id="result" class="result"></div>
+
+</section>
+
+
+<section id="chat" class="section chat-section">
+
+    <h2>Ask Your AI Career Copilot 🤖</h2>
+
+    <div class="chat-box">
+
+        <div id="messages" class="messages">
+
+            <div class="bot message">
+                👋 Hi! Ask me anything about careers, skills,
+                interviews or learning paths.
+            </div>
+
+        </div>
+
+
+        <div class="chat-input">
+
+            <input
+                id="chatInput"
+                type="text"
+                placeholder="Ask your career question..."
+            >
+
+            <button onclick="sendMessage()">
+                Send
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <p>
+        © 2026 AI Career Copilot | Built with Python + Flask + AI
+    </p>
+
+</footer>
+
+
+<script src="/static/script.js"></script>
+
+</body>
+
+</html>
